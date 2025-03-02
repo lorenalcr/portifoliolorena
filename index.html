@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Lorena</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jersey+10&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -23,50 +26,82 @@
     <section id="home" class="section parallax">
         <div class="content fade-in">
             <h1>Olá, sou a Lorena!</h1>
+            <div class="spacer"></div>
             <p>Desenvolvedora apaixonada por tecnologia e inovação.</p>
         </div>
     </section>
     
     <section id="about" class="section parallax">
         <div class="content fade-in">
-            <h2>Sobre Mim</h2>
-            <p>
-                Sou estudante de Ciência da Computação na UNESPAR e apaixonada por tecnologia, desenvolvimento web e soluções inovadoras. Durante meus estudos, desenvolvi o BrainCode, um Ambiente Virtual de Aprendizagem (AVA) voltado para programação, como parte de um Projeto Integrador (P.I.) junto com meus colegas.  
-            </p>
-            <p>
-                Tenho experiência com HTML, CSS, PHP e MySQL, além de ferramentas como WampServer e GitHub. Estou sempre em busca de novos desafios para aprimorar minhas habilidades e criar projetos funcionais e eficientes.
-
-Se quiser saber mais sobre meu trabalho ou trocar uma ideia, fique à vontade para entrar em contato!
-            </p>
+            <div class="sobre-mim-container">
+                <img src="img/foto Lorena.jpeg" alt="Foto de perfil" class="sobre-mim-imagem">
+                <div class="sobre-mim-texto">
+                    <h2>Sobre Mim</h2>
+                    <div class="spacer"></div>
+                    <p>
+                        Sou estudante de Ciência da Computação na UNESPAR e apaixonada por tecnologia, desenvolvimento web e soluções inovadoras. Durante meus estudos, desenvolvi o BrainCode, um Ambiente Virtual de Aprendizagem (AVA) voltado para programação, como parte de um Projeto Integrador (P.I.) junto com meus colegas.  
+                    </p>
+                    <p>
+                        Tenho experiência com HTML, CSS, PHP e MySQL, além de ferramentas como WampServer e GitHub. Estou sempre em busca de novos desafios para aprimorar minhas habilidades e criar projetos funcionais e eficientes.
+                         Se quiser saber mais sobre meu trabalho ou trocar uma ideia, fique à vontade para entrar em contato!
+                    </p>
+            </div>
         </div>
     </section>
     
     <section id="projects" class="section parallax">
         <div class="content fade-in">
             <h2>Projetos</h2>
+            <div class="spacer"></div>
             <p>Conheça alguns dos meus trabalhos na área de desenvolvimento.</p>
+            <div class="spacer"></div>
+            <div class="card-proj">
+                <div class="card-content">
+                    <img src="img/projeto.png" alt="projeto">
+                    <div class="spacer"></div>
+                    <h4>Meu Portfólio</h4>
+                    <div class="spacer"></div>
+                    <p>Site pessoal para exibição de projetos e habilidades.</p>
+                </div>
+            </div>
         </div>
     </section>
-     <section id="skills" class="section">
+    
+    <section id="skills" class="section">
         <div class="content">
             <h2>Habilidades</h2>
+            <div class="spacer"></div>
             <p>Confira minhas principais habilidades abaixo:</p>
             <div class="skills-container">
-                <div class="skill-box">
-                    <h3>HTML e CSS</h3>
-                    <p>Criação de sites responsivos e bem estruturados, com design moderno e boa usabilidade.</p>
+                <div class="card">
+                    <img src="img/hmtl logo.webp" alt="html">
+                    <div class="card-content">
+                        <h4>HTML</h4>
+                    </div>
                 </div>
-                <div class="skill-box">
-                    <h3>PHP</h3>
-                    <p>Desenvolvimento de funcionalidades dinâmicas e interativas com integração de banco de dados.</p>
+                <div class="card">
+                    <img src="img/css logo.webp" alt="css">
+                    <div class="card-content">
+                        <h4>CSS</h4>
+                    </div>
                 </div>
-                <div class="skill-box">
-                    <h3>GitHub</h3>
-                    <p>Versionamento de código, colaboração em projetos e gerenciamento de repositórios.</p>
+                <div class="card">
+                    <img src="img/banco de dados.jpg" alt="sql">
+                    <div class="card-content">
+                        <h4>SQL</h4>
+                    </div>
                 </div>
-                <div class="skill-box">
-                    <h3>WAMP Server</h3>
-                    <p>Configuração de ambientes de desenvolvimento local e teste de projetos com Apache, MySQL e PHP.</p>
+                <div class="card">
+                    <img src="img/wamp server.webp" alt="wamp">
+                    <div class="card-content">
+                        <h4>WAMP</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/github logo.webp" alt="github">
+                    <div class="card-content">
+                        <h4>GITHUB</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,6 +110,7 @@ Se quiser saber mais sobre meu trabalho ou trocar uma ideia, fique à vontade pa
     <section id="contact" class="section parallax">
         <div class="content fade-in">
             <h2>Contato</h2>
+            <div class="spacer"></div>
             <a href="https://www.linkedin.com/in/lorena-ceron-ab0239302/">LinkedIn</a>
             <a href="https://github.com/lorenalcr">GitHub</a>
             <p>Entre em contato comigo para parcerias e oportunidades.</p>
