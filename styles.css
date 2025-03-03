@@ -7,16 +7,21 @@
 }
 
 body {
-    background: linear-gradient(to right, #000000, #5d2a8c);
-    color: rgb(255, 255, 255); /* Mudei a cor do texto para branco para melhor contraste */
-    animation: none  /* Animação de flash */
-   
+        margin: 0; 
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #000000, #5d2a8c);
+        color: white;
+        font-family: Arial, sans-serif;
+        animation: none;
+        overflow-x: hidden; 
 }
 
 .star {
     position: absolute;
     border-radius: 50%;
-    background: red; /* Temporariamente alterado para vermelho */
+    background: red; 
     animation: twinkle 1.5s infinite alternate;
 }
 
@@ -36,8 +41,6 @@ body {
     }
 }
 
-
-/* Menu de Navegação */
 nav {
     position: fixed;
     top: 0;
@@ -46,6 +49,7 @@ nav {
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
+    display: inline;
 }
 
 nav ul {
@@ -66,25 +70,23 @@ nav ul li a:hover {
     color: #00aaff;
 }
 
-/* Seções */
 .section {
     height: 100vh;
-    width: 100%;
+    width: 100vw; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
-    border-radius: 0px; /* Bordas arredondadas */
-    margin: 0px; /* Espaço entre as seções */
+    margin: 0;
 }
 
 .section:nth-child(odd) {
-    background: linear-gradient(to right, #000000, #5d2a8c); /* Cor do fundo das seções ímpares */
+    background: linear-gradient(to right, #000000, #5d2a8c);
 }
 
 .section:nth-child(even) {
-    background: linear-gradient(to right, #5d2a8c, #000000); /* Cor do fundo das seções pares */
+    background: linear-gradient(to right, #5d2a8c, #000000);
 }
 
 .section h1{
@@ -109,133 +111,153 @@ a:hover {
     color: #00aaff;
 }
 
-/* Estilos para as habilidades e cards */
+
 .skills-container {
     display: flex; 
     gap: 70px;
     width: 100%;
-    margin-top: 20px; /* Adiciona espaço acima dos cards */
+    margin-top: 20px; 
 }
 
-/* Cada caixinha de habilidade */
+
 .skill-box {
-    background-color: #ffffff; /* Cor de fundo da habilidade */
-    color: #000000; /* Cor do texto */
+    background-color: #ffffff; 
+    color: #000000; 
     padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(161, 62, 228, 0.1); /* Sombra sutil para destacar */
-    transition: transform 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(161, 62, 228, 0.1); 
+    transition: transform 0.3s ease-in-out; 
 }
 
-/* Efeito ao passar o mouse na caixinha */
 .skill-box:hover {
-    transform: translateY(-10px); /* Eleva a caixinha ao passar o mouse */
+    transform: translateY(-10px); 
 }
 
 .skill-box h3 {
     font-size: 0.8rem;
-    color: #5d2a8c; /* Cor do título dentro do quadrado */
+    color: #5d2a8c; 
 }
 
 .skill-box p {
     font-size: 1rem;
-    color: #000000; /* Cor do texto da descrição */
+    color: #000000; 
 }
 
 .card {
-    width: 200px; /* Largura do card */
-    border: 2px solid #7d34a7; /* Borda do card */
-    border-radius: 10px; /* Cantos arredondados */
-    overflow: hidden; /* Para esconder partes da imagem que saem do card */
+    width: 200px; 
+    border: 2px solid #7d34a7; 
+    border-radius: 10px; 
+    overflow: hidden;
 }
 
 .card-proj {
     text-align: left;
-    height: 350px; /* Defina a altura do card */
-    width: 380px; /* Largura do card */
-    border: 2px solid #7d34a7; /* Borda do card */
-    border-radius: 10px; /* Cantos arredondados */
-    overflow: hidden; /* Para esconder partes da imagem que saem do card */
-    position: relative; /* Permite que a imagem fique dentro do card */
-    transform: translateX(-380px); /* Move o card 20px para a esquerda */
+    height: 430px; 
+    width: 380px; 
+    border: 2px solid #73448f; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    position: relative; 
+    transform: translateX(-380px); 
+    background-color: #654c83;
+    box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.8); 
+    padding: 3px;
 }
 
 .card-proj img {
-    width: 100%; /* A imagem vai ocupar toda a largura do card */
-    height: 100%; /* A imagem vai ocupar toda a altura do card */
-    object-fit: cover; /* Faz com que a imagem cubra o espaço do card sem distorcer */
-    border-radius: 10px 10px 0 0; /* Bordas arredondadas no topo da imagem (opcional) */
+    width: 100%; 
+    height: 80%; 
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
+}
+
+.card-hab {
+    width: 180px;
+    height: 200px;
+    background-color: #654c83;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.8);
+   
 }
 
 .card-content {
-    position: relative; /* Para posicionar o conteúdo sobre a imagem */
-    bottom: 2px; /* Distância do conteúdo do fundo do card */
-    left: 10px; /* Distância do conteúdo da borda esquerda */
-    right: 10px; /* Distância do conteúdo da borda direita */
-    color: rgb(255, 255, 255); /* Cor do texto */
-   
-}
-.card img {
-    width: 100%; /* Preenche a largura do card */
-    height: auto; /* Mantém a proporção */
-    object-fit: cover; /* Cobre o card sem distorcer */
-}
-.card:hover {
-    transform: scale(1.05); /* Efeito de aumentar o tamanho do card ao passar o mouse */
+    text-align: center;
+    color: white;
 }
 
+.card-hab:hover {
+    transform: scale(1.1); 
+    background-color: #7a4b9b; 
+}
+
+.card-hab i {
+    font-size: 50px; 
+    margin-bottom: 10px;
+}
+
+.card-hab p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
 #about {
-    text-align: center; /* Justifica o texto */
-    padding: 20px; /* Adiciona um pouco de padding, se necessário */
+    text-align: center; 
+    padding: 20px; 
     margin-top: 20px;
 }
 
 #home{
-    text-align: center; /* Justifica o texto */
-    padding: 20px; /* Adiciona um pouco de padding, se necessário */
+    text-align: center; 
+    padding: 20px; 
     margin-top: 20px;
 
 }
 
 #projects{
-    text-align: center; /* Justifica o texto */
-    padding: 20px; /* Adiciona um pouco de padding, se necessário */
+    text-align: center; 
+    padding: 20px; 
     margin-top: 40px;
 }
 
 #skills{
-    text-align: center; /* Justifica o texto */
-    padding: 20px; /* Adiciona um pouco de padding, se necessário */
+    text-align: center; 
+    padding: 20px; 
     margin-top: 20px;
 }
 
 #contact{
-    text-align: center; /* Justifica o texto */
-    padding: 20px; /* Adiciona um pouco de padding, se necessário */
+    text-align: center; 
+    padding: 20px; 
     margin-top: 20px;
 }
 
 .sobre-mim-container {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: start; /* Mantém os itens alinhados à esquerda */
-    max-width: 80%; /* Define uma largura máxima para melhor organização */
-    margin: auto; /* Centraliza o container na página */
+    align-items: center; 
+    justify-content: start; 
+    max-width: 80%; 
+    margin: auto;
 }
 
 .sobre-mim-imagem {
-    width: 280px; /* Ajuste o tamanho conforme necessário */
+    width: 280px; 
     height: 280px;
     border-radius: 50%;
     border: 5px solid #5d2a8c;
     object-fit: cover;
-    margin-right: 260px; /* Dá um espaço entre a imagem e o texto */
+    margin-right: 260px; 
     margin-left: -260px;
 }
 
 .sobre-mim-texto {
-    text-align: left; /* Mantém o texto alinhado à esquerda */
-    max-width: 900px; /* Limita a largura do texto */
+    text-align: left; 
+    max-width: 900px; 
 }
 
 h1{
@@ -246,7 +268,13 @@ h1{
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.hab{
+    text-align: center;
+    font-size: 22px;
 }
 
 h4{
@@ -254,6 +282,51 @@ h4{
     font-size: 25px;
 }
 
+.custom-icon{
+    color: #814cb3;
+    font-size: 45px;
+}
+
+.skill{
+    color: #ffffff;
+    font-size: 40px;
+}    
+
 .spacer {
-    height: 30px; /* Ajuste a altura conforme necessário */
+    height: 30px; 
+}
+
+.typing-effect {
+    font-family: "Courier New", Courier, monospace; 
+    font-size: 24px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: 4px solid rgba(255, 255, 255, 0.75); 
+    width: 0; 
+    animation: typing 4s steps(40) 1s forwards, blink-caret 0.75s step-end infinite; 
+}
+
+@keyframes typing {
+    to {
+        width: 100%; 
+    }
+}
+
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
 }

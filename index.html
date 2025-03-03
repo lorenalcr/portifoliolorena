@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jersey+10&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,15 +23,17 @@
             </ul>
         </nav>
     </header>
-    
-    <section id="home" class="section parallax">
+ <section id="home" class="section parallax">
         <div class="content fade-in">
             <h1>Olá, sou a Lorena!</h1>
             <div class="spacer"></div>
-            <p>Desenvolvedora apaixonada por tecnologia e inovação.</p>
+            <div class="typing-effect">
+                <p>Desenvolvedora apaixonada por tecnologia e inovação.</p>
+            </div>
+        </div>
         </div>
     </section>
-    
+
     <section id="about" class="section parallax">
         <div class="content fade-in">
             <div class="sobre-mim-container">
@@ -39,16 +42,17 @@
                     <h2>Sobre Mim</h2>
                     <div class="spacer"></div>
                     <p>
-                        Sou estudante de Ciência da Computação na UNESPAR e apaixonada por tecnologia, desenvolvimento web e soluções inovadoras. Durante meus estudos, desenvolvi o BrainCode, um Ambiente Virtual de Aprendizagem (AVA) voltado para programação, como parte de um Projeto Integrador (P.I.) junto com meus colegas.  
+                        Sou estudante de Ciência da Computação na UNESPAR e apaixonada por tecnologia, desenvolvimento web e soluções inovadoras. Durante meus estudos, desenvolvi o BrainCode, um Ambiente Virtual de Aprendizagem (AVA) voltado para programação, como parte de um Projeto Integrador (P.I.) junto com meus colegas.
                     </p>
                     <p>
                         Tenho experiência com HTML, CSS, PHP e MySQL, além de ferramentas como WampServer e GitHub. Estou sempre em busca de novos desafios para aprimorar minhas habilidades e criar projetos funcionais e eficientes.
-                         Se quiser saber mais sobre meu trabalho ou trocar uma ideia, fique à vontade para entrar em contato!
+                        Se quiser saber mais sobre meu trabalho ou trocar uma ideia, fique à vontade para entrar em contato!
                     </p>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <section id="projects" class="section parallax">
         <div class="content fade-in">
             <h2>Projetos</h2>
@@ -57,63 +61,81 @@
             <div class="spacer"></div>
             <div class="card-proj">
                 <div class="card-content">
-                    <img src="img/projeto.png" alt="projeto">
+                    <img src="img/Black and White Business Project Minimalist Presentation.png" alt="projeto">
                     <div class="spacer"></div>
                     <h4>Meu Portfólio</h4>
                     <div class="spacer"></div>
                     <p>Site pessoal para exibição de projetos e habilidades.</p>
+                    <div class="spacer"></div>
+                    <a href="https://www.linkedin.com/in/lorena-ceron-ab0239302/">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/lorenalcr">
+                    <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section id="skills" class="section">
         <div class="content">
             <h2>Habilidades</h2>
             <div class="spacer"></div>
-            <p>Confira minhas principais habilidades abaixo:</p>
+            <p class="hab">Confira minhas principais habilidades abaixo:</p>
             <div class="skills-container">
-                <div class="card">
-                    <img src="img/hmtl logo.webp" alt="html">
+                <div class="card-hab">
                     <div class="card-content">
-                        <h4>HTML</h4>
+                        <i class="fa-brands fa-html5 skill"></i>
+                        <p>HTML</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/css logo.webp" alt="css">
+                <div class="card-hab">
                     <div class="card-content">
-                        <h4>CSS</h4>
+                        <i class="fa-brands fa-css3-alt skill"></i>
+                        <p>CSS</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/banco de dados.jpg" alt="sql">
+                <div class="card-hab">
                     <div class="card-content">
-                        <h4>SQL</h4>
+                        <i class="fa-brands fa-php skill"></i>
+                        <p>PHP</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/wamp server.webp" alt="wamp">
+                <div class="card-hab">
                     <div class="card-content">
-                        <h4>WAMP</h4>
+                        <i class="fa-solid fa-database skill"></i>
+                        <p>SQL</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/github logo.webp" alt="github">
+                <div class="card-hab">
                     <div class="card-content">
-                        <h4>GITHUB</h4>
+                        <i class="fa-brands fa-github skill"></i>
+                        <p>GITHUB</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   
+
     <section id="contact" class="section parallax">
         <div class="content fade-in">
-            <h2>Contato</h2>
-            <div class="spacer"></div>
-            <a href="https://www.linkedin.com/in/lorena-ceron-ab0239302/">LinkedIn</a>
-            <a href="https://github.com/lorenalcr">GitHub</a>
-            <p>Entre em contato comigo para parcerias e oportunidades.</p>
+            <div class="icones">
+                <h2>Contatos</h2>
+                <div class="spacer"></div>
+                <p>Entre em contato comigo para parcerias e oportunidades.</p>
+                <div class="spacer"></div>
+                <a href="https://github.com/lorenalcr" target="_blank">
+                    <i class="fa-brands fa-github custom-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lorena-ceron-ab0239302/" target="_blank">
+                    <i class="fa-brands fa-linkedin custom-icon"></i>
+                </a>
+                <a href="https://www.instagram.com/ceronlorena0/">
+                    <i class="fa-brands fa-instagram custom-icon"></i>
+                </a>
+            </div>
         </div>
     </section>
 </body>

@@ -11,5 +11,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     window.addEventListener("scroll", checkFadeIn);
-    checkFadeIn(); // Para verificar os elementos já visíveis ao carregar
+    checkFadeIn(); 
 });
